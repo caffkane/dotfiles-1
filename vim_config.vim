@@ -32,4 +32,13 @@ nnoremap <S-t> :FZF<CR>
 nnoremap <S-f> :Ag<CR>
 
 " Tomorrow night
-colorscheme Tomorrow-Night-Bright
+colorscheme Tomorrow-Night
+
+" Set tab to only 2 spaces
+set expandtab
+set tabstop=2
+set shiftwidth=2
+
+" Remove whitespace
+autocmd BufWritePre * %s/\s\+$//e
+
